@@ -30,19 +30,26 @@
 'use strict';
 
 function setup() {
-  createCanvas(720, 720);
+  var canvasDiv = document.getElementById('myCanvas');
+  var width = canvasDiv.offsetWidth;
+  var sketchCanvas = createCanvas(width,windowHeight);
+  console.log(sketchCanvas);
+  sketchCanvas.parent("myCanvas");
+  
   noCursor();
-
   colorMode(HSB, 360, 100, 100);
-  //rectMode(CENTER); // Draws the rectangle from the center. What are other modes? Default is top-left.
   noStroke();
+}
+
+function windowResized() {
+  resizeCanvas(windowWidth, windowHeight);
 }
 
 function draw() {
   background(mouseY / 2, mouseY/10, 100); // This is background color. 720/2 = 360 which is the color wheel. Only Hue changes originally. 
 
   fill(360 - mouseY / 2, 100, 100);
-  rect(0, 0, 720, mouseY + 1); //This is the rect position/size – (x,y,w,h) – x,y is the starting point (top left unless rectMode is defined otherwise). w,h, is widht and height in px.
+  rect(0, 0, width, mouseY + 1); //This is the rect position/size – (x,y,w,h) – x,y is the starting point (top left unless rectMode is defined otherwise). w,h, is widht and height in px.
   // Why + 1? Must be some sort of best practice?? Works fine without it in this example.
 }
 

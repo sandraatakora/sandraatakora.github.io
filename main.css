@@ -1,6 +1,5 @@
 body {
-  padding: 0;
-  margin: 0;
+    margin: 0 auto;
 }
 
 canvas {
@@ -11,42 +10,64 @@ canvas {
   -webkit-user-select: none;
 }
 
+.container {
+  display: grid;
+  grid-template-columns: 0.5fr 2fr;
+  grid-template-rows: auto;
+  height: 100vh;
+  grid-template-areas:
+    "menu main";
+}
+
+.main, #myCanvas {
+  grid-area: main;
+}
+
+.menu {
+grid-area: menu;
+width: 255px;
+}
+
 h1 {
-  color: #ffffff;
-  position: absolute;
-}
-
-#help {
-  cursor: help;
-  position: absolute;
-  right: 15px;
-  top: 15px;
-  background-color: black;
-  color: white;
-  padding: 4px;
-  font-family: sans-serif;
-  font-size: 15px;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-}
-
-#help-content {
-  font-family: monospace;
-  font-size: 13px;
-  font-style: normal;
-  font-variant: normal;
+  color: #000000;
+  font-family: 'Crimson Text', serif;
   font-weight: 400;
-  line-height: 17px;
-  white-space: pre;
-  z-index: 10;
+  padding: 20px 20px 0px 30px;
+  margin: 0;
 }
 
-#help-content a {
+p, ul {
+  font-family: 'Roboto', sans-serif;
+  font-size: .9em;
+  line-height: 1.5em;
+  padding: 0px 20px 0px 30px;
+}
+
+ul {
+  list-style: none;
+}
+
+ul li a {
+  text-decoration: none;
+  line-height: 1.7em;
+}
+
+a:link {
   color: black;
 }
 
-#help-content a {
+/* visited link */
+a:visited {
+  color: gray;
+}
+
+/* mouse over link */
+a:hover {
+  color: blue;
+}
+
+/* selected link */
+a:active {
   color: black;
 }
+
