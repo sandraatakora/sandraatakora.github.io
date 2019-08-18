@@ -69,5 +69,17 @@ a:hover {
 /* selected link */
 a:active {
   color: black;
+  font-weight: 700;
 }
 
+/* MOBILE */
+@media screen and (max-width: 425px) {
+ 
+  .container {
+    display: flex;
+  }
+  
+  .menu {
+    width: 100%;
+  }
+}
