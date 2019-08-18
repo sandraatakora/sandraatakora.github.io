@@ -10,6 +10,10 @@ canvas {
   -webkit-user-select: none;
 }
 
+.hidden {
+  display: none;
+}
+
 .container {
   display: grid;
   grid-template-columns: 0.5fr 2fr;
@@ -28,6 +32,13 @@ grid-area: menu;
 width: 255px;
 }
 
+.project {
+  min-height: 100vh;
+  position: absolute;
+  top: 0px;
+  background-color: #fff;
+}
+
 h1 {
   color: #000000;
   font-family: 'Crimson Text', serif;
@@ -36,11 +47,22 @@ h1 {
   margin: 0;
 }
 
-p, ul {
+p, ul, h3 {
   font-family: 'Roboto', sans-serif;
   font-size: .9em;
   line-height: 1.5em;
   padding: 0px 20px 0px 30px;
+  max-width: 50%;
+}
+
+h3 {
+  font-weight: 700;
+  padding: 20px 20px 0px 30px;
+}
+
+img {
+  max-width: 60%;
+  padding: 20px 20px 0px 30px;
 }
 
 ul {
@@ -49,17 +71,18 @@ ul {
 
 ul li a {
   text-decoration: none;
-  line-height: 1.7em;
+  line-height: 1.9em;
 }
 
 a:link {
   color: black;
+  text-decoration: none;
 }
 
 /* visited link */
 a:visited {
-  color: gray;
-  text-decoration: line-through;
+  text-decoration: none;
+  color: black;
 }
 
 /* mouse over link */
@@ -68,18 +91,23 @@ a:hover {
 }
 
 /* selected link */
-a:active {
+.active {
   color: black;
   font-weight: 700;
+  line-height: 1.9em;
 }
 
 /* MOBILE */
 @media screen and (max-width: 425px) {
  
   .container {
-    display: flex;
+    display: block;
   }
   
+  #myCanvas {
+    display: none;
+  }
+
   .menu {
     width: 100%;
   }

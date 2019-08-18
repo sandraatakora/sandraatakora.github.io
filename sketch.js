@@ -53,6 +53,17 @@ function draw() {
   // Why + 1? Must be some sort of best practice?? Works fine without it in this example.
 }
 
-function keyPressed() {
-  if (key == 's' || key == 'S') saveCanvas(gd.timestamp(), 'png');
-}
+// function keyPressed() {
+//   if (key == 's' || key == 'S') saveCanvas(gd.timestamp(), 'png');
+// }
+
+
+// let project = $('.project');
+// let listitem = $('#perch');
+
+// console.log(project, listitem);
+
+// listitem.on('click', function() {
+//   project.removeClass('hidden');
+// })
+
