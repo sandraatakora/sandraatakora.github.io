@@ -20,3 +20,5 @@ function hideImg() {
 // function showImg() {
 //   img.show()
 // }
+
+var scroll = new SmoothScroll('a[href*="#"]');

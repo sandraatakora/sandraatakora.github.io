@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
     margin: 0 auto;
 }
@@ -39,6 +43,10 @@ width: 255px;
   background-color: #fff;
 }
 
+.subproject {
+  padding-left: 30px;
+}
+
 h1 {
   color: #000000;
   font-family: 'Crimson Text', serif;
@@ -60,9 +68,23 @@ h3 {
   padding: 20px 20px 0px 30px;
 }
 
-img {
-  max-width: 60%;
-  padding: 20px 20px 0px 30px;
+.top {
+  padding: 40px 20px 20px 30px;
+}
+
+h4 {
+  font-family: 'Roboto', sans-serif;
+  font-size: .9em;
+  line-height: 1.5em;
+  padding: 50px 0px 30px 30px;
+  max-width: 50%;
+  margin: 0;
+  font-weight: 400;
+}
+
+img, iframe {
+  max-width: 80%;
+  padding: 0px 20px 20px 30px;
 }
 
 ul {
@@ -72,6 +94,10 @@ ul {
 ul li a {
   text-decoration: none;
   line-height: 1.9em;
+}
+
+#plink {
+  color: blue;
 }
 
 a:link {
