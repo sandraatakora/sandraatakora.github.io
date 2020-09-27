@@ -1,45 +1,96 @@
 <!DOCTYPE html>
-<html>
+<html id="html"> 
+
   <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
-    
-    <script src="libraries/jquery/jquery.js"></script>
-    <script src="libraries/p5/p5.min.js" type="text/javascript"></script>
-
-    <script src="libraries/p5/p5.dom.min.js" type="text/javascript"></script>
-    <script src="libraries/generative-design-library/generative-design-library.js" type="text/javascript"></script>
-
-    <script src="sketch.js" type="text/javascript"></script>
-    <script src="click.js" type="text/javascript"></script>
-
-    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Crimson+Text&display=swap" rel="stylesheet">
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    <title>Sandra Atakora</title>
     <link href="stylesheets/main.css" rel="stylesheet" type="text/css">
+    <link href="stylesheets/pointer.css" rel="stylesheet">
+    <script src="libraries/jquery/jquery.js"></script>
 
-    <title>sandra atakora</title>
+  <link rel="shortcut icon" href="assets/favicon-50.png" type="image/x-icon">
   </head>
-  <body>
-    <div class="container">
-      <div class="menu">
-    <h1>sandra atakora</h1>
-    <ul>
-      <li><a href="perch.html" id="perch">perch</a></li>
-      <li><a href="nitto.html">nitto</a></li>
-      <li><a href="loup.html">loup</a></li>
-      <li><a href="stroll.html">stroll</a></li>
-      <li><a href="abstractr.html">abstractr</a></li>
-      <li><a href="oyraa.html">oyraa</a></li>
-      <!-- <li><a href="project-lean.html">project lean</a></li> -->
-    </ul>
-  </div>
 
-  <div class="main">
-    <div id="myCanvas"></div>
-    
-  </div>
-  </div>
+  <body>
+
+<div class="header">
+        <div class="name">
+          <h1><a href="index.html">Sandra Atakora</a></h1>
+        </div>
+
+        <div class="social">
+          <h2><span class="black">be: </span><a href="https://www.behance.net/sandraatakora" id="" target="_blank">@sandraatakora</a></h2>
+        </div>
+</div>
+
+
+        <div class="intro">
+          <h2>Hi, I'm Sandra —</h2>
+          <h2>Interaction designer creating
+            <span class="toggleword" data-values="experiences, animations, strategy, flows, systems,visuals, interfaces">interfaces</span> for AR, MR, and anything
+            else digital + physical.
+          <h2>UX Director at <a href="https://www.perchinteractive.com" class="link" id="" target="_blank">Perch</a>.</h2>
+          <h2>Aerial practitioner and producer
+            of soft aerial show(s).</h2>
+            <!-- <a href="https://www.softcirque.com" id="" target="_blank">soft aerial show(s)</a> -->
+        </div>
+
+        <div class="awards">
+          <p class="title"><span class="black">Honors & Awards</span></p>
+          <p><!-- <a href="">Adobe UX Designers to Watch</a><span class="faded">, 2020</span><br> -->
+            The Webby Awards, <span class="faded">Judge, IADAS, 2018—now</span><br>
+            <a href="https://edisonawards.com/winners2018.php" id="" target="_blank">Gold Medal for Retail Innovation (Perch)</a><span class="faded">, Edison Awards, 2018</span><br>
+            <a href="https://www.forbes.com/sites/danreich/2017/12/14/15-technology-companies-to-watch-in-2018/#11738e122b06" id="" target="_blank">Forbes 15 Technology Companies to Watch (Perch)</a><span class="faded">, 2018</span><br>
+            <a href="https://www.behance.net/gallery/104251381/Stroll-for-Warp-Weft" id="" target="_blank">NYCxDesign Awards</a>, <span class="faded">Honoree with Stroll, Warp & Weft, 2016</span><br>
+            Pratt Circle Award, <span class="faded">Excellence in Academic Achievement, 2017</span><br>
+            Bikuben Scholar, <span class="faded">Denmark-America Foundation Scholarship Recipient, 2014, 2016</span><br>
+            Jorck’s Foundation, <span class="faded">Scholarship Recipient, 2014, 2015</span><br>
+          </p>
+        </div>
+
+        <div class="shows">
+          <p class="title"><span class="black">Shows & Exhibitions</span></p>
+          <p>World’s Fair Nano, <a href="https://drive.google.com/file/d/1ytsffJ_KNtPcsMS4CUkp9kcIzdOi10fl/view?usp=sharing" id="" target="_blank">Loup – AR for grocery shopping (Master's Thesis)</a><span class="faded">, Pier  
+            29, San Francisco, CA, 2018</span><br>
+            TEXWORLD, <span class="faded">AR Textile for TEKTILES, Brooklyn Fashion & Design Accelerator, Jacob K. Javitz Center, New York, NY, 2018</span><br>
+            ICFF, <a href="https://www.warpandweft.com/designers-studio-items/stroll-ii" id="" target="_blank">Stroll II for Warp & Weft</a><span class="faded">, Jacob K. Javitz Center, New York, NY, 2018</span><br>
+            World’s Fair Nano, Loup – AR for grocery shopping<span class="faded">, Brooklyn Expo Center, NY, 2017</span><br>
+            ICFF, <a href="https://www.warpandweft.com/designers-studio-items/stroll" id="" target="_blank">Stroll for Warp & Weft</a><span class="faded">, Jacob K. Javitz Center, New York, NY, 2017</span><br>
+            WANTED Design, <span class="faded">Industry City, Brooklyn, NY, 2015</span><br>
+          </p>
+        </div>
+
+        <div class="talks">
+          <p class="title"><span class="black">Talks & Lectures</span></p>
+          <p>Designing New Experiences That Drive Engagement In-Store, <span class="faded">Perch, psfk x 
+            RIW, 2020</span><br>
+            Accessibility in UX Design, <a href="https://grayarea.org/workshop/ux-design-mutual-aid/" id="" target="_blank">Intro to UX Design Workshop</a><span class="faded">, Gray Area, 2020</span><br>
+            ‘AI Sometimes and Why’ Lecture Series, <span class="faded">Pratt Institute, Brooklyn, NY, 2017</span><br>
+            AR for Designers, <span class="faded">Parsons School of Design, New York, NY, 2017</span><br>
+            Graduate Color Studio, <span class="faded">Guest Critic, Pratt Institute, Brooklyn, NY, 2017</span><br>
+          </p>
+        </div>
+
+    <footer>
+      <div class="hi">
+      <h2>Say hi</h2><h2 id="emoji">👾</h2></div>
+
+      <div class="contact">
+        <h2><span class="black">hello(AT)sandraatakora.com</span></h2>
+        <h2><span class="black">be: </span><a href="https://www.behance.net/sandraatakora" id="" target="_blank">@sandraatakora</a></h2>
+        <h2><span class="black">ig: </span><a href="https://www.instagram.com/sandraatakora/" id="" target="_blank">@sandraatakora</a></h2>
+        <h2><span class="black">tw: </span><a href="https://www.twitter.com/sandra_atakora/" id="" target="_blank">@sandra_atakora</a></h2>
+        <h2><span class="black">ln: </span><a href="https://www.linkedin.com/in/sandraatakora/" id="" target="_blank">../sandraatakora</a></h2>
+      </div>
+
+      <p class="copyright"><span class="faded">© sandra atakora 2020<span></p>
+    </footer>
+
+
+
   </body>
+  <!-- custom cursor -->
+  <div class="pointer" id="pointer-dot"></div>
+  <script src="scripts/pointer.js"></script>
+
 </html>
