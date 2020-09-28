@@ -83,15 +83,15 @@
             pointer.css({
                 transform: "scale(3.2)"
             });
-            this.style.color = randomColors();
-            function randomColors() {
-                return '#' + Math.floor(Math.random() * 16777215).toString(16);
-              }
         })
         .mouseup(function() {
             pointer.css({
                 transform: "scale(3.2)"
             });
+            this.style.color = randomColors();
+            function randomColors() {
+                return '#' + Math.floor(Math.random() * 16777215).toString(16);
+              }
         });
 
 
